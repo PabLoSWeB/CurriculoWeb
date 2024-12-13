@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        body {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            background-color: rgb(56, 52, 52);
+            margin: 10px;
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        #fotoheader {
+            display: flex;
+            border: solid white 7px;
+            border-radius: 160px;
+            width: 290px;
+            height: 290px;
+            margin-left: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 65px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 70px;
+            margin: auto;
+        }
+
+        header h2 {
+            color: white;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin: auto;
+        }
+
+        nav {
+            padding-top: 10px;
+            padding-left: 10px;
+            margin: auto;
+        }
+
+        nav img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .section1 {
+            padding: 40px 60px;
+        
+        }
+
+        .section1 h1 {
+            font-size: 40px;
+            padding-bottom: 10px;
+        }
+
+        .section1 p {
+            border-bottom: solid rgb(75, 62, 62) 10px;
+            width: 200px;
+        }
+
+        .section1 h4 {
+            font-size: 20px;
+            color: rgb(75, 62, 62);
+            padding-bottom: 15px;
+            padding-top: 10px;
+        }
+
+        .section1 div {
+            display: flex;
+            align-items: center;
+        }
+
+        .section1 h5 {
+            color: rgb(75, 62, 62);
+            font-size: 18px;
+            margin-left: 0px;
+        }
+
+        .section2 {
+            padding: 40px 60px;
+        }
+
+        .section2 h1 {
+            font-size: 40px;
+        }
+
+        .section2 p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: rgb(75, 62, 62);
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            header h1 {
+                padding-top: 2px;
+                font-size: 35px;
+            }
+
+            header h2 {
+                margin: auto;
+                font-size: 15px;
+            }
+
+            nav {
+                margin: auto 0px;
+            }
+
+            nav img {
+                margin-bottom: 10px;
+            }
+
+            #fotoheader {
+                margin-left: 5px;
+                width: 250px;
+                height: 240px;
+            }
+
+            .section1 {
+                padding-left: 10px;
+                margin: auto;
+            }
+
+            .section1 h1 {
+                font-size: 35px;
+            }
+
+            main{
+                flex-direction: column;
+            }
+
+            .section2{
+                padding-left: 10px;
+                margin: auto;
+            }
+
+
+        }
+    </style>
+    <header>
+        <img id="fotoheader" src="imagens/IMG_20241211_131156852~2.jpg" alt="Minha foto">
+        <div>
+            <h1>PABLO RIBEIRO</h1>
+            <h2>Programador e Designer Gráfico</h2>
+            <nav>
+                <a href="">
+                    <img src="imagens/Facebook.png" alt="Foto facebook">
+                </a>
+                <a href="">
+                    <img src="imagens/Instagram.PNG" alt="Foto instagram">
+                </a>
+                <a href="">
+                    <img src="imagens/GitHub.png" alt="Foto GitHub">
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="section1">
+
+            <h1>HABILIDADES</h1>
+            <h4>Canva</h4>
+            <div>
+                <p></p>
+                <h5 style="margin-left: 20px;">90%</h5>
+            </div>
+
+            <h4>Microsoft Powerpoint</h4>
+            <div>
+                <p style="width: 170px;"></p>
+                <h5 style="margin-left: 50px;">70%</h5>
+            </div>
+
+            <h4>LibreOffice Calc</h4>
+            <div>
+                <p style="width: 185px;"></p>
+                <h5 style="margin-left: 35px;">80%</h5>
+            </div>
+
+
+            <h4>Visual Studio Code</h4>
+            <div>
+                <p style="width: 150px;"></p>
+                <h5 style="margin-left: 70px;">65%</h5>
+            </div>
+
+            <h4>Dev C++</h4>
+            <div>
+                <p style="width: 140px;"></p>
+                <h5 style="margin-left: 80px;">60%</h5>
+            </div>
+
+        </section>
+
+        <section class="section2">
+            <h1>OBJETIVOS</h1>
+            <p>Meu objetivo é obter minha primeira experiêcia no mercado <br>de trabalho e posteriormente
+                evoluir dentro da empresa. <br>Sou uma pessoa determinada, comunicativa e que adora novos
+                <br>desafios.
+            </p>
+
+            <h1>CURSOS</h1>
+            <p>- Curso em Tecnologia da Informaçâo em andamento;</p>
+            <p>- Inglês Intermediário;</p>
+
+            <h1>HOBBIES</h1>
+            <p>- Ler;</p>
+            <p>- Estudar;</p>
+            <p>- Aprender Coisas Novas;</p>
+            <p>- Tocar instrumentos musicais;</p>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
